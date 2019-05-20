@@ -5,4 +5,6 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="colorSplash">#323449</color>
+    <color name="colorTextBlack">#191919</color>
+    <color name="colorTextWhite">#f0f0f0</color>
 </resources>

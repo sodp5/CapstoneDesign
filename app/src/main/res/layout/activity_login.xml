@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSplash"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="260dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/img_logo_atm">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/llClassificationGather"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imgLogo">
+        <Button
+            android:id="@+id/btnSelectInheritance"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_classification_clicked"
+            android:text="기업"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="22sp"/>
+        <Button
+            android:id="@+id/btnSelectEmployee"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_classification_unclicked"
+            android:text="직원"
+            android:textSize="22sp"
+            android:textColor="@color/colorTextBlack"
+            android:layout_marginStart="17dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rlLoginIDBox"
+        android:layout_centerHorizontal="true"
+        android:layout_width="337dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/llClassificationGather">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/box_login_info"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_login_username"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="15dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginStart="80dp"
+            android:hint="username"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlLoginPWBox"
+        android:layout_centerHorizontal="true"
+        android:layout_width="337dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rlLoginIDBox">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/box_login_info"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_login_password"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="16dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginStart="80dp"
+            android:hint="password"
+            android:inputType="numberPassword"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="337dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rlLoginPWBox"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_non_touch"
+        android:layout_marginTop="20dp"
+        android:text="LOGIN"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnLogin"
+        android:layout_above="@+id/btnJoinIn">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnJoinIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="회원가입"
+        android:textSize="22sp"
+        android:textColor="@color/colorTextWhite"
+        android:layout_above="@id/ivJoinPartitionBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"/>
+    <ImageView
+        android:id="@+id/ivJoinPartitionBar"
+        android:layout_width="337dp"
+        android:layout_height="2dp"
+        android:background="#808080"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/llFindGather"
+        android:layout_marginBottom="25dp"/>
+    <LinearLayout
+        android:id="@+id/llFindGather"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디 찾기"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"
+            android:layout_marginStart="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 찾기"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"
+            android:layout_marginStart="50dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
