@@ -6,8 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.albatimemanagement.employee.EmployeeAccountActivity;
+import com.example.albatimemanagement.employee.EmployeeCalenderActivity;
 import com.example.albatimemanagement.employee.EmployeePayCheckActivity;
+import com.example.albatimemanagement.employee.EmployeeSettingActivity;
+import com.example.albatimemanagement.inheritance.InheritanceAccountActivity;
+import com.example.albatimemanagement.inheritance.InheritanceCalenderActivity;
 import com.example.albatimemanagement.inheritance.InheritancePayCheckSelectActivity;
+import com.example.albatimemanagement.inheritance.InheritanceSettingActivity;
 
 public class MainActivity extends AppCompatActivity{
     public static final String CLASSIFICATION = "classification";
@@ -59,11 +65,17 @@ public class MainActivity extends AppCompatActivity{
 
     private void initEmployeeIntent() {
         intentPaycheck = new Intent(getApplicationContext(), EmployeePayCheckActivity.class);
+        intentCalender = new Intent(getApplicationContext(), EmployeeCalenderActivity.class);
+        intentAccount = new Intent(getApplicationContext(), EmployeeAccountActivity.class);
+        intentSetting = new Intent(getApplicationContext(), EmployeeSettingActivity.class);
     }
 
 
     private void initInheritanceIntent() {
         intentPaycheck = new Intent(getApplicationContext(), InheritancePayCheckSelectActivity.class);
+        intentCalender = new Intent(getApplicationContext(), InheritanceCalenderActivity.class);
+        intentAccount = new Intent(getApplicationContext(), InheritanceAccountActivity.class);
+        intentSetting = new Intent(getApplicationContext(), InheritanceSettingActivity.class);
     }
 
     private View.OnClickListener clickListener = new View.OnClickListener() {

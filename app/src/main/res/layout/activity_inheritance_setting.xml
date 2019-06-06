@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".inheritance.InheritanceSettingActivity">
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:background="@drawable/btn_go_back"
-        android:scaleX="0.3"
-        android:scaleY="0.5"
-        android:layout_marginTop="13dp"/>
+    tools:context=".inheritance.InheritanceSettingActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relTitleCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorSetting">
+
+        <ImageButton
+            android:id="@+id/btnInheritanceSettingGoBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_go_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btnInheritanceSettingGoBack"
+            android:layout_marginStart="40dp"
+            android:text="설정"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#315A7B"
-            android:gravity="center"
-            android:padding="20dp"
-            android:text="Setting"
-            android:textColor="#ffff"
-            android:textSize="30dp" />
 
         <Button
+            android:id="@+id/btni1"
             android:text="계정 정보변경"
             android:textColor="#ffff"
-            android:id="@+id/btn_setting_Edit"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="#315A7B"
@@ -40,9 +49,9 @@
 
 
         <Button
+            android:id="@+id/btni2"
             android:text="알람 설정"
             android:textColor="#ffff"
-            android:id="@+id/btn_setting_Notice"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="#315A7B"
@@ -50,9 +59,9 @@
             />
 
         <Button
+            android:id="@+id/btni3"
             android:text="시급 및 월급 관리"
             android:textColor="#ffff"
-            android:id="@+id/btn_setting_Paycheck"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="#315A7B"
@@ -60,22 +69,22 @@
             android:layout_margin="30dp"
             />
         <Button
+            android:id="@+id/btni4"
             android:text="버전 정보"
             android:textColor="#ffff"
-            android:id="@+id/btn_setting_Version"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="#315A7B"
             android:layout_gravity="center" />
 
         <Button
+            android:id="@+id/btni5"
             android:text="로그아웃"
             android:textColor="#ffff"
-            android:id="@+id/btn_setting_Logout"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="#315A7B"
             android:layout_gravity="center"
             android:layout_margin="30dp"/>
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

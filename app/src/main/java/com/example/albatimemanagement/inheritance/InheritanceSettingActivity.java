@@ -2,14 +2,27 @@ package com.example.albatimemanagement.inheritance;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.example.albatimemanagement.R;
 
-public class InheritanceSettingActivity extends AppCompatActivity {
+public class InheritanceSettingActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inheritance_setting);
+
+        findViewById(R.id.btni1).setOnClickListener(this);
+        findViewById(R.id.btni2).setOnClickListener(this);
+        findViewById(R.id.btni3).setOnClickListener(this);
+        findViewById(R.id.btni4).setOnClickListener(this);
+        findViewById(R.id.btni5).setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        Toast.makeText(this, "미구현입니다.", Toast.LENGTH_SHORT).show();
     }
 }
