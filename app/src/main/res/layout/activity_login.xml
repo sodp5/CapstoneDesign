@@ -28,7 +28,7 @@
             android:id="@+id/btnSelectInheritance"
             android:layout_width="160dp"
             android:layout_height="match_parent"
-            android:background="@drawable/btn_classification_clicked"
+            android:background="@drawable/btn_sortation_clicked"
             android:text="기업"
             android:textColor="@color/colorTextBlack"
             android:textSize="22sp"/>
@@ -36,7 +36,7 @@
             android:id="@+id/btnSelectEmployee"
             android:layout_width="160dp"
             android:layout_height="match_parent"
-            android:background="@drawable/btn_classification_unclicked"
+            android:background="@drawable/btn_sortation_unclicked"
             android:text="직원"
             android:textSize="22sp"
             android:textColor="@color/colorTextBlack"
@@ -61,6 +61,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginStart="15dp"/>
         <EditText
+            android:id="@+id/edtLoginUserName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
@@ -88,6 +89,7 @@
             android:layout_marginTop="11dp"
             android:layout_marginStart="16dp"/>
         <EditText
+            android:id="@+id/edtLoginPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
@@ -129,12 +131,14 @@
         android:layout_above="@id/ivJoinPartitionBar"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="22dp"/>
-    <ImageView
+    <View
         android:id="@+id/ivJoinPartitionBar"
-        android:layout_width="337dp"
+        android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="#808080"
+        android:background="@color/colorBarGray"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
         android:layout_above="@id/llFindGather"
         android:layout_marginBottom="25dp"/>
     <LinearLayout

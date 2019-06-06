@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <TextView
+        android:id="@+id/tvItemInheritancePayName"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="안경문"
+        android:textSize="14sp"
+        android:layout_marginStart="8dp"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/tvItemInheritancePayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12시간"
+        android:textSize="14sp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@id/tvItemInheritancePayName"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/tvItemInheritancePayOfHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8,350원"
+        android:textSize="14sp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@id/tvItemInheritancePayTime"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/tvItemInheritancePaySalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100,200 원"
+        android:textSize="14sp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@id/tvItemInheritancePayOfHour"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:id="@+id/btnItemInheritancePayCopy"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/btn_color_paycheck"
+        android:text="계좌복사"
+        android:textSize="13sp"
+        android:textColor="@color/colorTextWhite"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

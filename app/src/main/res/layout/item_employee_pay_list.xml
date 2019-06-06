@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="12dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorTextBlack"
+                android:text="기업 이름(지점)"
+                android:background="@drawable/border_all_pay_check"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextBlack"
+                android:text="누적시간"
+                android:background="@drawable/border_all"
+                android:height="35dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvItemEmployeeStackTime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextBlack"
+                android:text="12시간"
+                android:background="@drawable/border_all"
+                android:height="35dp"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextBlack"
+                android:text="최저 시급"
+                android:background="@drawable/border_all"
+                android:height="35dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvItemEmployeePoh"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextBlack"
+                android:text="8,350원"
+                android:background="@drawable/border_all"
+                android:height="35dp"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextBlack"
+                android:text="월급 일자"
+                android:background="@drawable/border_all"
+                android:height="35dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvItemEmployeeSalaryDay"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextBlack"
+                android:text="1일"
+                android:background="@drawable/border_all"
+                android:height="35dp"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextBlack"
+                android:text="이달의 월급"
+                android:background="@drawable/border_all"
+                android:height="35dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvItemEmployeeSom"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextBlack"
+                android:text="307,080원"
+                android:background="@drawable/border_all"
+                android:height="35dp"
+                android:gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+</LinearLayout>

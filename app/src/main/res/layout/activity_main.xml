@@ -1,18 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorMenu">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/MainList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/goToAccount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccount">
+
+            <ImageView
+                android:id="@+id/btnAccount"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/icon_account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btnAccount"
+                android:text="Account"
+                android:layout_marginStart="55dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goToCalender"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorCalender">
+
+            <ImageView
+                android:id="@+id/btnCalender"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/icon_calender" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btnCalender"
+                android:layout_marginStart="55dp"
+                android:layout_centerVertical="true"
+                android:text="Calender"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goToPaycheck"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPaycheck">
+
+            <ImageView
+                android:id="@+id/btnPayCheck"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/icon_salary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btnPayCheck"
+                android:layout_marginStart="60dp"
+                android:layout_centerVertical="true"
+                android:text="Paycheck"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goToNotice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorNotice">
+
+            <ImageView
+                android:id="@+id/btnNotice"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/icon_announce" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btnNotice"
+                android:layout_marginStart="55dp"
+                android:layout_centerVertical="true"
+                android:text="Notice"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goToSetting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorSetting">
+
+            <ImageView
+                android:id="@+id/btnSetting"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/icon_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btnSetting"
+                android:layout_marginStart="55dp"
+                android:layout_centerVertical="true"
+                android:text="Setting"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="30dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
