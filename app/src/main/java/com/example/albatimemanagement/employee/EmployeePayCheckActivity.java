@@ -35,6 +35,12 @@ public class EmployeePayCheckActivity extends AppCompatActivity {
         setListViewHeightBasedOnChildren(lvEmployeePayList);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getWindow().setStatusBarColor(getColor(R.color.colorStatusPaycheck));
+    }
+
     public static void setListViewHeightBasedOnChildren(ListView listView) {
         ListAdapter listAdapter = listView.getAdapter();
         if (listAdapter == null) {

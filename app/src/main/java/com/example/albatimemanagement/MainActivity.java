@@ -35,6 +35,12 @@ public class MainActivity extends AppCompatActivity{
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getWindow().setStatusBarColor(getColor(R.color.colorStatusMain));
+    }
+
     private void initView() {
         goToAccount = findViewById(R.id.goToAccount);
         goToCalender = findViewById(R.id.goToCalender);

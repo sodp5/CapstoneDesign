@@ -28,6 +28,12 @@ public class InheritancePayCheckSelectActivity extends AppCompatActivity {
         lvInheritancePayCheck.setAdapter(inheritanceListAdapter);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getWindow().setStatusBarColor(getColor(R.color.colorStatusPaycheck));
+    }
+
     private void initView() {
         lvInheritancePayCheck = findViewById(R.id.lvInheritancePayCheck);
     }

@@ -17,4 +17,11 @@
     <color name="colorSetting">#315a7b</color>
 
     <color name="colorStatusSplash">#232434</color>
+    <color name="colorStatusJoinIn">#1D282E</color>
+    <color name="colorStatusMain">#7F7F7F</color>
+    <color name="colorStatusAccount">#E39D84</color>
+    <color name="colorStatusCalender">#E35F70</color>
+    <color name="colorStatusPaycheck">#B25770</color>
+    <color name="colorStatusNotice">#574667</color>
+    <color name="colorStatusSetting">#1D4667</color>
 </resources>

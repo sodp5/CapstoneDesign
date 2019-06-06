@@ -42,7 +42,7 @@
                 android:layout_height="70dp"
                 android:scaleType="fitXY"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="50dp"
                 android:src="@drawable/icon_account" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/btnAccount"
                 android:text="Account"
-                android:layout_marginStart="55dp"
+                android:layout_marginStart="70dp"
                 android:layout_centerVertical="true"
                 android:textColor="@color/colorTextWhite"
                 android:textSize="30dp" />
@@ -69,14 +69,14 @@
                 android:layout_height="70dp"
                 android:scaleType="fitXY"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="50dp"
                 android:src="@drawable/icon_calender" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/btnCalender"
-                android:layout_marginStart="55dp"
+                android:layout_marginStart="70dp"
                 android:layout_centerVertical="true"
                 android:text="Calender"
                 android:textColor="@color/colorTextWhite"
@@ -96,14 +96,14 @@
                 android:layout_height="70dp"
                 android:scaleType="fitXY"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="60dp"
                 android:src="@drawable/icon_salary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/btnPayCheck"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="80dp"
                 android:layout_centerVertical="true"
                 android:text="Paycheck"
                 android:textColor="@color/colorTextWhite"
@@ -123,14 +123,14 @@
                 android:layout_height="70dp"
                 android:scaleType="fitXY"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="50dp"
                 android:src="@drawable/icon_announce" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/btnNotice"
-                android:layout_marginStart="55dp"
+                android:layout_marginStart="70dp"
                 android:layout_centerVertical="true"
                 android:text="Notice"
                 android:textColor="@color/colorTextWhite"
@@ -150,14 +150,14 @@
                 android:layout_height="70dp"
                 android:scaleType="fitXY"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="50dp"
                 android:src="@drawable/icon_setting" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/btnSetting"
-                android:layout_marginStart="55dp"
+                android:layout_marginStart="70dp"
                 android:layout_centerVertical="true"
                 android:text="Setting"
                 android:textColor="@color/colorTextWhite"

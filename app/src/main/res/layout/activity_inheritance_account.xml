@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".inheritance.InheritanceAccountActivity">
+
+    <RelativeLayout
+        android:id="@+id/relTitleAccount"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccount">
+
+        <ImageButton
+            android:id="@+id/btnAccountGoBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_go_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btnAccountGoBack"
+            android:layout_marginStart="40dp"
+            android:text="계정"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_leftandright"
+        android:layout_below="@+id/relTitleAccount">
+
+        <RelativeLayout
+            android:id="@+id/relAccount"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/border_bottom">
+
+            <ImageView
+                android:id="@+id/ivAccount"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img_account_male"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"/>
+
+            <TextView
+                android:id="@+id/tvAccountBossName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ㅇㅇㅇ 사장님"
+                android:textSize="25sp"
+                android:layout_toEndOf="@+id/ivAccount"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp"
+                android:textColor="#191919"/>
+
+            <TextView
+                android:id="@+id/tvAccountBossBackCountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="연동계좌 국민 1111-22-333445"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/ivAccount"
+                android:layout_below="@+id/tvAccountBossName"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="23dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relCoperationTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relAccount"
+            android:layout_marginTop="15dp">
+
+            <TableLayout
+                android:id="@+id/tableBoss"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="#191919"
+                        android:text="기업 이름(지점)"
+                        android:background="@drawable/border_all"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="#191919"
+                        android:text="직원 수"
+                        android:background="@drawable/border_all"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="#191919"
+                        android:text="3명"
+                        android:background="@drawable/border_all"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="#191919"
+                        android:text="최저 시급"
+                        android:background="@drawable/border_all"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="#191919"
+                        android:text="8,350원"
+                        android:background="@drawable/border_all"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="#191919"
+                        android:text="월급 일자"
+                        android:background="@drawable/border_all"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="#191919"
+                        android:text="1일"
+                        android:background="@drawable/border_all"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="#191919"
+                        android:text="이달의 월급"
+                        android:background="@drawable/border_all"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="#191919"
+                        android:text="307,080원"
+                        android:background="@drawable/border_all"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvMyCoperation"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/border_all"
+            android:text="내 기업"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/relCoperationTable"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="#79C5C5C5"
+            android:layout_below="@+id/tvMyCoperation"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"></LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_color_account"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="기업 추가"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

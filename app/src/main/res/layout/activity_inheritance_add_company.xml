@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".inheritance.InheritanceAddCompanyActivity">
+
+    <RelativeLayout
+        android:id="@+id/relTitleCoperationAdd"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccount">
+
+        <ImageButton
+            android:id="@+id/btnAccountGoBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_go_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btnAccountGoBack"
+            android:layout_marginStart="40dp"
+            android:text="기업 추가"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvCoperationInfo"
+        android:layout_below="@+id/relTitleCoperationAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정보"
+        android:textColor="#191919"
+        android:textSize="23sp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtCoperationName"
+        android:background="@drawable/border_all"
+        android:layout_below="@+id/tvCoperationInfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:hint="기업 이름"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"/>
+
+    <EditText
+        android:id="@+id/edtCoperationTelephoneNumber"
+        android:background="@drawable/border_all"
+        android:layout_below="@+id/edtCoperationName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:hint="전화 번호(대표)"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"/>
+
+    <TextView
+        android:id="@+id/tvCoperationAddress"
+        android:layout_below="@+id/edtCoperationTelephoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주소"
+        android:textColor="#191919"
+        android:textSize="23sp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <FrameLayout
+        android:id="@+id/spinnerWrapper1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvCoperationAddress">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_big"
+            android:scaleType="fitXY"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/spinnerWrapper2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvCoperationAddress"
+        android:layout_toEndOf="@+id/spinnerWrapper1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_big"
+            android:scaleType="fitXY"/>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCoperationAddress"
+            android:layout_toEndOf="@+id/spinnerWrapper2"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/edtCoperationAddress"
+        android:background="@drawable/border_all"
+        android:layout_below="@+id/spinnerWrapper1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:hint="상세 주소"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"/>
+
+    <TextView
+        android:id="@+id/tvCoperationNumber"
+        android:layout_below="@+id/edtCoperationAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사업자 번호"
+        android:textColor="#191919"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="35dp"/>
+
+    <EditText
+        android:id="@+id/edtCoperationNumber"
+        android:background="@drawable/border_all"
+        android:layout_below="@+id/edtCoperationAddress"
+        android:layout_toEndOf="@+id/tvCoperationNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="35dp"
+        android:hint="번호"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_below="@+id/tvCoperationNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvCoperationNumber"
+        android:text="월급 일자"
+        android:textColor="#191919"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="35dp"/>
+
+    <FrameLayout
+        android:id="@+id/spinnerWrapper3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edtCoperationNumber"
+        android:layout_toEndOf="@+id/spinnerWrapper1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_small"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_below="@+id/tvCoperationAddress"
+            android:layout_toEndOf="@+id/spinnerWrapper2"/>
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_color_account"
+        android:layout_marginBottom="70dp"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="완료"/>
+
+</RelativeLayout>

@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".inheritance.InheritanceCalenderActivity">
+
+    <RelativeLayout
+        android:id="@+id/relTitleCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorCalender">
+
+        <ImageButton
+            android:id="@+id/btnAccountGoBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_go_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btnAccountGoBack"
+            android:layout_marginStart="40dp"
+            android:text="시간표"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relTitleCalendar"
+        android:background="@drawable/border_leftandright">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toStartOf="@+id/tvDay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/btn_prev" />
+
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6월 2주차"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorTextBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(06-03~06-09)"
+                android:textSize="16sp"
+                android:layout_marginTop="28dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorTextBlack"/>
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="50dp"
+                android:layout_toEndOf="@+id/tvDay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/btn_next"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relTableWeekly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left_top"
+                        android:text="월"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left_top"
+                        android:text="화"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left_top"
+                        android:text="수"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left_top"
+                        android:text="목"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left_top"
+                        android:text="금"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left_top"
+                        android:text="토"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left_top_right"
+                        android:text="일"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left"
+                        android:text="06-03"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left"
+                        android:text="06-04"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left"
+                        android:text="06-05"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left"
+                        android:text="06-06"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left"
+                        android:text="06-07"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_left"
+                        android:text="06-08"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_leftandright"
+                        android:text="06-09"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="18sp"/>
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/border_all">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccount">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="4명"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextWhite"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPaycheck">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="3명"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextWhite"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNotice">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="4명"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextWhite"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorSetting">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="4명"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextWhite"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccount">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="4명"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextWhite"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPaycheck">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="3명"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextWhite"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorNotice">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0명"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextWhite"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relDayOfWeek"
+            android:layout_below="@+id/relTableWeekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#79C5C5C5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="월요일"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorTextBlack"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relTableEmployee"
+            android:layout_below="@+id/relDayOfWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TableLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <TableRow>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/border_all_gray"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="이름"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/border_all_gray"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="시간"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="안경문"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="10:00~12:00/15:00~18:00"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="김태기"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="10:00~12:00/15:00~18:00"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="이헌"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="10:00~12:00/15:00~18:00"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="남다연"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text="10:00~12:00/15:00~18:00"/>
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text=" "/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text=" "/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text=" "/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/border_all"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="20sp"
+                        android:text=" "/>
+
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnCalendarComplete"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_color_calender"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="20sp"
+            android:text="생성"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
