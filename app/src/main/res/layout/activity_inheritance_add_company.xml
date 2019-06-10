@@ -6,7 +6,7 @@
     tools:context=".inheritance.InheritanceAddCompanyActivity">
 
     <RelativeLayout
-        android:id="@+id/relTitleCooperationAdd"
+        android:id="@+id/relTitleCompanyAdd"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/colorAccount">
@@ -32,8 +32,8 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/tvCoperationInfo"
-        android:layout_below="@+id/relTitleCooperationAdd"
+        android:id="@+id/tvCompanyInfo"
+        android:layout_below="@+id/relTitleCompanyAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="정보"
@@ -44,9 +44,9 @@
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/edtCoperationName"
+        android:id="@+id/edtCompanyName"
         android:background="@drawable/border_all"
-        android:layout_below="@+id/tvCoperationInfo"
+        android:layout_below="@+id/tvCompanyInfo"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="35dp"
@@ -56,9 +56,9 @@
         android:paddingStart="15dp"/>
 
     <EditText
-        android:id="@+id/edtCoperationTelephoneNumber"
+        android:id="@+id/edtCompanyTelephoneNumber"
         android:background="@drawable/border_all"
-        android:layout_below="@+id/edtCoperationName"
+        android:layout_below="@+id/edtCompanyName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="35dp"
@@ -68,8 +68,8 @@
         android:paddingStart="15dp"/>
 
     <TextView
-        android:id="@+id/tvCoperationAddress"
-        android:layout_below="@+id/edtCoperationTelephoneNumber"
+        android:id="@+id/tvCompanyAddress"
+        android:layout_below="@+id/edtCompanyTelephoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="주소"
@@ -85,7 +85,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/tvCoperationAddress">
+        android:layout_below="@id/tvCompanyAddress">
 
         <ImageView
             android:layout_width="match_parent"
@@ -107,7 +107,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/tvCoperationAddress"
+        android:layout_below="@id/tvCompanyAddress"
         android:layout_toEndOf="@+id/spinnerWrapper1">
 
         <ImageView
@@ -121,13 +121,13 @@
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvCoperationAddress"
+            android:layout_below="@+id/tvCompanyAddress"
             android:layout_toEndOf="@+id/spinnerWrapper2"/>
 
     </FrameLayout>
 
     <EditText
-        android:id="@+id/edtCoperationAddress"
+        android:id="@+id/edtCompanyAddress"
         android:background="@drawable/border_all"
         android:layout_below="@+id/spinnerWrapper1"
         android:layout_width="match_parent"
@@ -139,8 +139,8 @@
         android:paddingStart="15dp"/>
 
     <TextView
-        android:id="@+id/tvCoperationNumber"
-        android:layout_below="@+id/edtCoperationAddress"
+        android:id="@+id/tvCompanyNumber"
+        android:layout_below="@+id/edtCompanyAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="사업자 번호"
@@ -151,10 +151,10 @@
         android:layout_marginStart="35dp"/>
 
     <EditText
-        android:id="@+id/edtCoperationNumber"
+        android:id="@+id/edtCompanyNumber"
         android:background="@drawable/border_all"
-        android:layout_below="@+id/edtCoperationAddress"
-        android:layout_toEndOf="@+id/tvCoperationNumber"
+        android:layout_below="@+id/edtCompanyAddress"
+        android:layout_toEndOf="@+id/tvCompanyNumber"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
@@ -165,10 +165,10 @@
 
     <TextView
         android:id="@+id/tvDate"
-        android:layout_below="@+id/tvCoperationNumber"
+        android:layout_below="@+id/tvCompanyNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/tvCoperationNumber"
+        android:layout_alignEnd="@+id/tvCompanyNumber"
         android:text="월급 일자"
         android:textColor="#191919"
         android:textSize="23sp"
@@ -182,7 +182,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/edtCoperationNumber"
+        android:layout_below="@id/edtCompanyNumber"
         android:layout_toEndOf="@+id/spinnerWrapper1">
 
         <ImageView
@@ -198,7 +198,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:layout_below="@+id/tvCoperationAddress"
+            android:layout_below="@+id/tvCompanyAddress"
             android:layout_toEndOf="@+id/spinnerWrapper2"/>
 
     </FrameLayout>
