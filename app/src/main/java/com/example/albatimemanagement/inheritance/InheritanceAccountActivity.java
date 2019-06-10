@@ -12,4 +12,10 @@ public class InheritanceAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inheritance_account);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getWindow().setStatusBarColor(getColor(R.color.colorStatusAccount));
+    }
 }

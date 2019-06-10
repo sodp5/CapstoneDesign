@@ -22,6 +22,12 @@ public class InheritanceSettingActivity extends AppCompatActivity implements Vie
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        getWindow().setStatusBarColor(getColor(R.color.colorStatusSetting));
+    }
+
+    @Override
     public void onClick(View view) {
         Toast.makeText(this, "미구현입니다.", Toast.LENGTH_SHORT).show();
     }

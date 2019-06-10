@@ -12,4 +12,10 @@ public class InheritanceCalenderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inheritance_calender);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getWindow().setStatusBarColor(getColor(R.color.colorStatusCalender));
+    }
 }

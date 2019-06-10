@@ -12,4 +12,10 @@ public class EmployeeAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_acount);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getWindow().setStatusBarColor(getColor(R.color.colorStatusAccount));
+    }
 }

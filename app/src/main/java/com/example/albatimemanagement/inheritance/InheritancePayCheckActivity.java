@@ -31,4 +31,10 @@ public class InheritancePayCheckActivity extends AppCompatActivity {
 
         lvPayList.setAdapter(adapter);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getWindow().setStatusBarColor(getColor(R.color.colorStatusPaycheck));
+    }
 }

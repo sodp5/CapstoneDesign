@@ -6,7 +6,7 @@
     tools:context=".inheritance.InheritanceAddCompanyActivity">
 
     <RelativeLayout
-        android:id="@+id/relTitleCoperationAdd"
+        android:id="@+id/relTitleCooperationAdd"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/colorAccount">
@@ -33,7 +33,7 @@
 
     <TextView
         android:id="@+id/tvCoperationInfo"
-        android:layout_below="@+id/relTitleCoperationAdd"
+        android:layout_below="@+id/relTitleCooperationAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="정보"
