@@ -2,130 +2,252 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="325dp"
+    android:layout_height="525dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginStart="42.5dp"
+    android:layout_marginEnd="42.5dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
     tools:context=".inheritance.InheritanceCalenderAddSchedulePopupActivity">
-    <Spinner
-        android:id="@+id/spinnerEmployeeName"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_margin="20dp">
-    </Spinner>
 
-    <Spinner
-        android:id="@+id/spinnerDate"
-        android:layout_width="120dp"
+    <FrameLayout
+        android:id="@+id/spinnerWrapperEmployeeName"
+        android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_margin="20dp"
-        android:layout_toRightOf="@+id/spinnerEmployeeName">
-    </Spinner>
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_big"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerEmployeeName"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/spinnerWrapperDate"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_toRightOf="@+id/spinnerWrapperEmployeeName">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_big"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerDate"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/textStartTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="시작시간"
-        android:layout_below="@+id/spinnerEmployeeName"
         android:textSize="20dp"
-        android:layout_margin="20dp"/>
+        android:textColor="@color/colorTextBlack"
+        android:layout_below="@+id/spinnerWrapperEmployeeName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
 
-    <Spinner
-        android:id="@+id/spinnerHour1"
-        android:layout_width="120dp"
+    <FrameLayout
+        android:id="@+id/spinnerWrapperHour1"
+        android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
         android:layout_below="@+id/textStartTime">
-    </Spinner>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_big"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerHour1"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </FrameLayout>
+
 
     <TextView
+        android:id="@+id/tvDateDay1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=":"
         android:textSize="30dp"
         android:layout_below="@id/textStartTime"
-        android:layout_toRightOf="@+id/spinnerHour1"
-        android:layout_marginTop="20dp"/>
-    <Spinner
-        android:id="@+id/spinnerMinute1"
-        android:layout_width="120dp"
+        android:layout_toRightOf="@+id/spinnerWrapperHour1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/spinnerWrapperMinute1"
+        android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_margin="20dp"
-        android:layout_toRightOf="@+id/spinnerHour1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/tvDateDay1"
         android:layout_below="@+id/textStartTime">
-    </Spinner>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_big"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerMinute1"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="마감시간"
-        android:layout_below="@+id/spinnerHour1"
         android:textSize="20dp"
-        android:layout_margin="20dp"/>
+        android:textColor="@color/colorTextBlack"
+        android:layout_below="@+id/spinnerWrapperHour1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
 
-    <Spinner
-        android:id="@+id/spinnerHour2"
-        android:layout_width="120dp"
+
+    <FrameLayout
+        android:id="@+id/spinnerWrapperHour2"
+        android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
         android:layout_below="@+id/text2">
-    </Spinner>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_big"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerHour2"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </FrameLayout>
 
     <TextView
+        android:id="@+id/tvDateDay2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=":"
         android:textSize="30dp"
         android:layout_below="@id/text2"
-        android:layout_toRightOf="@+id/spinnerHour1"
-        android:layout_marginTop="20dp"/>
-    <Spinner
-        android:id="@+id/spinnerMinute2"
-        android:layout_width="120dp"
+        android:layout_toRightOf="@+id/spinnerWrapperHour2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/spinnerWrapperMinute2"
+        android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_margin="20dp"
-        android:layout_toRightOf="@+id/spinnerHour2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/tvDateDay2"
         android:layout_below="@+id/text2">
-    </Spinner>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_big"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerMinute2"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </FrameLayout>
+
 
     <Button
         android:id="@+id/btnAddTime"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinnerMinute2"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spinnerWrapperMinute2"
         android:gravity="center"
         android:layout_alignParentRight="true"
         android:text="시간 추가"
-        android:textSize="20dp"
+        android:textSize="17sp"
         android:textColor="#ffff"
         android:background="#232434"
-        android:layout_margin="10dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"/>
 
-    <EditText
-        android:id="@+id/edt1"
+    <LinearLayout
+        android:id="@+id/linearLvInheritanceAddSchedule"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/btnAddTime"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border_all"
+        android:layout_below="@+id/btnAddTime">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt1">
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
         <Button
             android:id="@+id/btnCancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="취소"
-            android:layout_weight="1"
-            android:layout_margin="20dp"/>
+            android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btnConfirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="확인"
-            android:layout_weight="1"
-            android:layout_margin="20dp" />
+            android:layout_weight="1" />
     </LinearLayout>
 
 

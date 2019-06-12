@@ -2,10 +2,14 @@ package com.example.albatimemanagement.employee;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.example.albatimemanagement.R;
 
 public class EmployeeNoticeActivity extends AppCompatActivity {
+
+    private View.OnClickListener unImplement = v -> Toast.makeText(this, "미구현입니다.", Toast.LENGTH_SHORT).show();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,6 +17,8 @@ public class EmployeeNoticeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_employee_notice);
 
         findViewById(R.id.ibtnEmployeeNoticeGoBack).setOnClickListener(v -> finish());
+        findViewById(R.id.btnApproval).setOnClickListener(unImplement);
+        findViewById(R.id.btnRefusal).setOnClickListener(unImplement);
     }
 
     @Override

@@ -102,19 +102,22 @@
                     android:layout_below="@+id/tvChangeRequestReason"/>
 
                 <Button
-                    android:id="@+id/btnChangeApproval"
+                    android:id="@+id/btnInheritanceChangeApproval"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:text="승인"
+                    android:background="@null"
                     android:layout_marginBottom="20dp"
-                    android:layout_toStartOf="@+id/btnChangeRefusal"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/btnInheritanceChangeRefusal"
                     android:layout_alignParentBottom="true"/>
 
                 <Button
-                    android:id="@+id/btnChangeRefusal"
+                    android:id="@+id/btnInheritanceChangeRefusal"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:text="거절"
+                    android:background="@null"
                     android:layout_marginBottom="20dp"
                     android:layout_marginEnd="18dp"
                     android:layout_alignParentEnd="true"
@@ -158,19 +161,22 @@
                     android:layout_below="@+id/tvApprovalRequestCorperation"/>
 
                 <Button
-                    android:id="@+id/btnCorperationApproval"
+                    android:id="@+id/btnInheritanceApproval"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:text="승인"
+                    android:background="@null"
                     android:layout_marginBottom="20dp"
-                    android:layout_toStartOf="@+id/btnCorperationRefusal"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/btnInheritanceRefusal"
                     android:layout_alignParentBottom="true"/>
 
                 <Button
-                    android:id="@+id/btnCorperationRefusal"
+                    android:id="@+id/btnInheritanceRefusal"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:text="거절"
+                    android:background="@null"
                     android:layout_marginBottom="20dp"
                     android:layout_marginEnd="18dp"
                     android:layout_alignParentEnd="true"
