@@ -1,152 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layout_width="325dp"
+    android:layout_height="550dp"
+    android:background="@drawable/border_all"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#656D6D6D"
     tools:context=".employee.ScheduleChangePopUpActivity">
 
-    <RelativeLayout
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="42.5dp"
-        android:layout_marginEnd="42.5dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:layout_width="325dp"
-        android:layout_height="550dp"
-        android:background="@drawable/border_all">
+    <TextView
+        android:id="@+id/tvChange1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextBlack"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="변경신청"/>
 
-        <TextView
-            android:id="@+id/tvChange1"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:textColor="@color/colorTextBlack"
+    <FrameLayout
+        android:id="@+id/spinnerWrapperReason"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvChange1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_big"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerReason"
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="변경신청"/>
+            android:background="@null"/>
 
-        <FrameLayout
-            android:id="@+id/spinnerWrapperReason"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_below="@id/tvChange1">
+    </FrameLayout>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/bg_spinner_big"
-                android:scaleType="fitXY"/>
+    <FrameLayout
+        android:id="@+id/spinnerWrapperEmployeeName"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tvChange1">
 
-            <Spinner
-                android:id="@+id/spinnerReason"
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"/>
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/spinnerWrapperEmployeeName"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/tvChange1">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/bg_spinner_small"
-                android:scaleType="fitXY"/>
-
-            <Spinner
-                android:id="@+id/spinnerEmployeeName"
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"/>
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/spinnerWrapperMyTime"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/spinnerWrapperEmployeeName">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/bg_spinner_small"
-                android:scaleType="fitXY"/>
-
-            <Spinner
-                android:id="@+id/spinnerMyTime"
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"/>
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/spinnerWrapperOtherTime"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/spinnerWrapperMyTime">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/bg_spinner_small"
-                android:scaleType="fitXY"/>
-
-            <Spinner
-                android:id="@+id/spinnerOtherTime"
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"/>
-
-        </FrameLayout>
-
-        <TextView
-            android:id="@+id/tvChangeReason"
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/border_change_reason"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_small"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerEmployeeName"
             android:layout_marginTop="20dp"
-            android:paddingTop="85dp"
-            android:paddingStart="10dp"
-            android:hint="변경사유"
-            android:textSize="16sp"
-            android:textColorHint="@color/colorAccount"
-            android:layout_below="@+id/spinnerWrapperOtherTime"/>
-
-        <Button
-            android:id="@+id/btnChangeCancel"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="취소"
             android:background="@null"/>
 
-        <Button
-            android:id="@+id/btnChangeComplete"
-            android:layout_width="140dp"
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/spinnerWrapperMyTime"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/spinnerWrapperEmployeeName">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_small"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerMyTime"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:text="확인"
             android:background="@null"/>
 
-    </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/spinnerWrapperOtherTime"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/spinnerWrapperMyTime">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_spinner_small"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinnerOtherTime"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvChangeReason"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/border_change_reason"
+        android:layout_marginTop="20dp"
+        android:paddingTop="85dp"
+        android:paddingStart="10dp"
+        android:hint="변경사유"
+        android:textSize="16sp"
+        android:textColorHint="@color/colorAccount"
+        android:layout_below="@+id/spinnerWrapperOtherTime"/>
+
+    <Button
+        android:id="@+id/btnChangeCancel"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="취소"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/btnChangeComplete"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="확인"
+        android:background="@null"/>
+
 
 </RelativeLayout>

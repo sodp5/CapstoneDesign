@@ -16,13 +16,16 @@
         <activity android:name=".employee.EmployeeAccountFindCompanyActivity" />
         <activity
             android:name=".inheritance.InheritanceCalenderAddSchedulePopupActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog"
             android:screenOrientation="portrait" />
         <activity android:name=".employee.EmployeeSettingActivity" />
         <activity android:name=".inheritance.InheritanceSettingActivity" />
         <activity android:name=".inheritance.InheritanceAddCompanyActivity" />
         <activity android:name=".inheritance.InheritanceCalenderActivity" />
         <activity android:name=".employee.EmployeeCalenderActivity" />
-        <activity android:name=".employee.ScheduleChangePopUpActivity" />
+        <activity android:name=".employee.ScheduleChangePopUpActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog"
+            android:screenOrientation="portrait"/>
         <activity android:name=".inheritance.InheritanceAccountActivity" />
         <activity android:name=".employee.EmployeeAccountActivity" />
         <activity android:name=".JoinInActivity" />

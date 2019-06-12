@@ -1,5 +1,6 @@
 package com.example.albatimemanagement.inheritance;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -14,6 +15,7 @@ public class InheritanceCalenderActivity extends BaseActivity {
         setContentView(R.layout.activity_inheritance_calender);
 
         findViewById(R.id.ibtnInheritanceCalenderGoBack).setOnClickListener(v -> finish());
+        findViewById(R.id.btnCalendarComplete).setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), InheritanceCalenderAddSchedulePopupActivity.class)));
     }
 
     @Override

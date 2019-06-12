@@ -1,5 +1,6 @@
 package com.example.albatimemanagement.employee;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageButton;
@@ -14,6 +15,7 @@ public class EmployeeCalenderActivity extends BaseActivity {
         setContentView(R.layout.activity_employee_calender);
 
         findViewById(R.id.ibtnEmployeeCalenderGoBack).setOnClickListener(v -> finish());
+        findViewById(R.id.btnCalendarRequestChange).setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ScheduleChangePopUpActivity.class)));
     }
 
     @Override
