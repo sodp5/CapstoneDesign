@@ -52,6 +52,29 @@ public class MainActivity extends BaseActivity {
         getWindow().setStatusBarColor(getColor(R.color.colorStatusMain));
     }
 
+    @Override
+    public void onBackPressed() {
+        if (pressCount == 0) {
+            pressCount++;
+            Toast.makeText(this, "한번 더 입력하시면 종료됩니다.", Toast.LENGTH_SHORT).show();
+            new Thread() {
+                @Override
+                public void run() {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    pressCount = 0;
+                }
+            }.start();
+        }
+        else if (pressCount < 1) pressCount++;
+        else if (pressCount == 1) {
+            super.onBackPressed();
+        }
+    }
+
     private void initView() {
         goToAccount = findViewById(R.id.goToAccount);
         goToCalender = findViewById(R.id.goToCalender);
