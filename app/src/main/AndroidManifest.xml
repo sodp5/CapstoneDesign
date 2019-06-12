@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".employee.EmployeeCalenderFindCompanyActivity"/>
+        <activity android:name=".employee.EmployeeAccountFindCompanyActivity"/>
         <activity android:name=".inheritance.InheritanceCalenderAddSchedulePopupActivity" android:screenOrientation="portrait"></activity>
         <activity android:name=".employee.EmployeeSettingActivity" />
         <activity android:name=".inheritance.InheritanceSettingActivity" />

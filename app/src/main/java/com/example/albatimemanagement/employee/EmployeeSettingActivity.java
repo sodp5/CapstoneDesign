@@ -15,6 +15,8 @@ public class EmployeeSettingActivity extends BaseActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_setting);
 
+        findViewById(R.id.ibtnEmployeeSettingGoBack).setOnClickListener(v -> finish());
+
         findViewById(R.id.btne1).setOnClickListener(this);
         findViewById(R.id.btne2).setOnClickListener(this);
         findViewById(R.id.btne3).setOnClickListener(this);

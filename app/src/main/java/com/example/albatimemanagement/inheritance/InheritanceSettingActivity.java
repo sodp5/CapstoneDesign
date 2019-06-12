@@ -15,6 +15,8 @@ public class InheritanceSettingActivity extends BaseActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inheritance_setting);
 
+        findViewById(R.id.ibtnInheritanceSettingGoBack).setOnClickListener(v -> finish());
+
         findViewById(R.id.btni1).setOnClickListener(this);
         findViewById(R.id.btni2).setOnClickListener(this);
         findViewById(R.id.btni3).setOnClickListener(this);

@@ -12,7 +12,7 @@
         android:background="@color/colorAccount">
 
         <ImageButton
-            android:id="@+id/btnInheritanceAddCompanyGoBack"
+            android:id="@+id/ibtnInheritanceAddCompanyGoBack"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:background="@drawable/btn_go_back"
@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/btnInheritanceAddCompanyGoBack"
+            android:layout_toEndOf="@id/ibtnInheritanceAddCompanyGoBack"
             android:layout_marginStart="40dp"
             android:text="기업 추가"
             android:layout_centerVertical="true"

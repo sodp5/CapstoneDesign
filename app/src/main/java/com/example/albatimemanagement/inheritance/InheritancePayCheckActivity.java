@@ -23,6 +23,8 @@ public class InheritancePayCheckActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inheritance_pay_check);
 
+        findViewById(R.id.ibtnInheritancePayCheckGoBack).setOnClickListener(v -> finish());
+
         initView();
         initInstance();
 

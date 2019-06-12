@@ -1,9 +1,9 @@
 package com.example.albatimemanagement.inheritance;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.albatimemanagement.R;
 import com.example.albatimemanagement.baseactivity.BaseActivity;
@@ -16,8 +16,9 @@ public class InheritanceAccountActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inheritance_account);
 
-        btnAddCompany = findViewById(R.id.btnAddCompany);
+        findViewById(R.id.ibtnInheritanceAccountGoBack).setOnClickListener(v -> finish());
 
+        btnAddCompany = findViewById(R.id.btnAddCompany);
         btnAddCompany.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), InheritanceAddCompanyActivity.class)));
     }
 

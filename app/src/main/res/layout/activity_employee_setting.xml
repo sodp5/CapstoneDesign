@@ -13,7 +13,7 @@
         android:background="@color/colorSetting">
 
         <ImageButton
-            android:id="@+id/btnEmployeeSettingGoBack"
+            android:id="@+id/ibtnEmployeeSettingGoBack"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:background="@drawable/btn_go_back"
@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/btnEmployeeSettingGoBack"
+            android:layout_toEndOf="@id/ibtnEmployeeSettingGoBack"
             android:layout_marginStart="40dp"
             android:text="설정"
             android:layout_centerVertical="true"

@@ -50,6 +50,8 @@ public class InheritanceAddCompanyActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inheritance_add_company);
 
+        findViewById(R.id.ibtnInheritanceAddCompanyGoBack).setOnClickListener(v -> finish());
+
         initView();
         initInstance();
         initEvent();

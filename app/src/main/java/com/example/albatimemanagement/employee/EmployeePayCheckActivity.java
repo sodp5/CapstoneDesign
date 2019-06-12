@@ -24,6 +24,8 @@ public class EmployeePayCheckActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_pay_check_select);
 
+        findViewById(R.id.ibtnEmployeePayCheckSelectGoBack).setOnClickListener(v -> finish());
+
         lvEmployeePayList = findViewById(R.id.lvEmployeePayList);
         list = new ArrayList<>();
 

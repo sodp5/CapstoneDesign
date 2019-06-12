@@ -11,5 +11,7 @@ public class JoinInActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join_in);
+
+        findViewById(R.id.ibtnJoinInGoBack).setOnClickListener(v -> finish());
     }
 }

@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JoinInActivity">
+    tools:context=".JoinInActivity"
+    android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:background="@drawable/btn_go_back"
-        android:scaleX="0.3"
-        android:scaleY="0.5"
-        android:layout_marginTop="11dp"/>
+    <RelativeLayout
+        android:id="@+id/relTitleSetting"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorStatusJoinIn">
+
+        <ImageButton
+            android:id="@+id/ibtnJoinInGoBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_go_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ibtnJoinInGoBack"
+            android:layout_marginStart="40dp"
+            android:text="설정"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#323449"
-            android:gravity="center"
-            android:padding="20dp"
-            android:text="회원가입"
-            android:textColor="#ffff"
-            android:textSize="20dp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -300,4 +310,4 @@
             android:background="#323449"
             android:layout_margin="15dp"/>
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
