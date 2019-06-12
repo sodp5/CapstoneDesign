@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employee.EmployeeCalenderFindCompanyActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relTitleFindCompany"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccount">
+        <ImageButton
+            android:id="@+id/btnAccountGoBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_go_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btnAccountGoBack"
+            android:layout_marginStart="40dp"
+            android:text="기업 찾기"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_leftandright">
+
+        <RelativeLayout
+            android:id="@+id/relFindCompany"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_spinner_empty_small"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <ImageView
+                android:id="@+id/ivCompanySearch"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:background="#C7C7C7"
+                android:src="@drawable/btn_search"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="검색어"
+                android:textColorHint="@color/colorTextBlack"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:background="@null"
+                android:layout_toEndOf="@+id/ivCompanySearch" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@+id/relFindCompany">
+
+            <FrameLayout
+                android:id="@+id/spinnerWrapperCityState"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_spinner_big" />
+
+                <Spinner
+                    android:id="@+id/spinnerCityState"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/spinnerWrapperCityDistrictBorough"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="40dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_spinner_big"
+                    android:scaleType="fitXY"/>
+
+                <Spinner
+                    android:id="@+id/spinnerCityDistrictBorough"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/linearSpinner"
+            android:background="@drawable/border_all"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tvFindCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="기업이름"
+                android:textSize="18sp"
+                android:background="drawable/border_"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvFindCompanyTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="전화번호"
+                android:textSize="18sp"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/tvFindCompanyName"/>
+
+            <TextView
+                android:id="@+id/tvFindCompanyAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주소"
+                android:textSize="18sp"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/tvFindCompanyTel"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/img_account_male"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnCalendarComplete"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_color_account"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="20sp"
+            android:text="완료"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -17,7 +17,6 @@ import com.example.albatimemanagement.inheritance.companylist.InheritanceListDat
 import com.example.albatimemanagement.roadnameinfo.LoadRegionName;
 import com.example.albatimemanagement.roadnameinfo.Region;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;

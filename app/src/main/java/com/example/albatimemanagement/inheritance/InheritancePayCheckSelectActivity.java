@@ -30,24 +30,6 @@ public class InheritancePayCheckSelectActivity extends AppCompatActivity {
 
         companyList = dm.getCompanyList();
 
-        CompanyInfo companyInfo = new CompanyInfo("(주)PJW");
-        companyInfo.addEmp("경문1");
-        companyInfo.addEmp("경문2");
-        CompanyInfo companyInfo2 = new CompanyInfo("(주)JSD");
-        companyInfo2.addEmp("태기1");
-        companyInfo2.addEmp("태기2");
-        CompanyInfo companyInfo3 = new CompanyInfo("(주)KWS");
-        companyInfo3.addEmp("이헌1");
-        companyInfo3.addEmp("이헌2");
-        CompanyInfo companyInfo4 = new CompanyInfo("(주)KJS");
-        companyInfo4.addEmp("다연1");
-        companyInfo4.addEmp("다연2");
-
-        companyList.add(companyInfo);
-        companyList.add(companyInfo2);
-        companyList.add(companyInfo3);
-        companyList.add(companyInfo4);
-
         inheritanceListAdapter = new ArrayAdapter<>(getApplicationContext(), R.layout.item_inheritance_name_list);
 //        inheritanceListAdapter.add("(주)PJW");
 //        inheritanceListAdapter.add("(주)KWS");
