@@ -19,16 +19,22 @@ public class LoginActivity extends BaseActivity {
     private Button btnSelectInheritance;
     private Button btnSelectEmployee;
     private Button btnLogin;
+    private Button btnJoinIn;
 
     private String classification = MainActivity.INHERITANCE;
 
     private final String ID = "admin";
     private final String PW = "1234";
 
+    private View.OnClickListener unImplement = v -> Toast.makeText(this, "미구현입니다.", Toast.LENGTH_SHORT).show();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        findViewById(R.id.btnFindId).setOnClickListener(unImplement);
+        findViewById(R.id.btnFindPw).setOnClickListener(unImplement);
 
         initView();
         initEvent();
@@ -46,12 +52,14 @@ public class LoginActivity extends BaseActivity {
         btnSelectInheritance = findViewById(R.id.btnSelectInheritance);
         btnSelectEmployee = findViewById(R.id.btnSelectEmployee);
         btnLogin = findViewById(R.id.btnLogin);
+        btnJoinIn = findViewById(R.id.btnJoinIn);
     }
 
     private void initEvent() {
         btnLogin.setOnTouchListener(btnLoginTouchEvent);
         btnSelectInheritance.setOnClickListener(btnSelectInheritanceClickEvent);
         btnSelectEmployee.setOnClickListener(btnSelectEmployeeClickEvent);
+        btnJoinIn.setOnClickListener(btnJoinInClickEvent);
     }
 
     private View.OnClickListener btnSelectInheritanceClickEvent = new View.OnClickListener() {
@@ -71,6 +79,13 @@ public class LoginActivity extends BaseActivity {
             btnSelectEmployee.setBackground(getDrawable(R.drawable.btn_sortation_clicked));
             btnSelectInheritance.setBackground(getDrawable(R.drawable.btn_sortation_unclicked));
             classification = MainActivity.EMPLOYEE;
+        }
+    };
+
+    private View.OnClickListener btnJoinInClickEvent = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(getApplicationContext(), JoinInActivity.class));
         }
     };
 

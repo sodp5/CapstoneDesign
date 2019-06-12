@@ -149,19 +149,23 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"
         android:orientation="horizontal">
-        <TextView
+        <Button
+            android:id="@+id/btnFindId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="아이디 찾기"
             android:textColor="@color/colorTextWhite"
             android:textSize="22sp"
+            android:background="@null"
             android:layout_marginStart="25dp"/>
-        <TextView
+        <Button
+            android:id="@+id/btnFindPw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="비밀번호 찾기"
             android:textColor="@color/colorTextWhite"
             android:textSize="22sp"
+            android:background="@null"
             android:layout_marginStart="50dp"/>
 
     </LinearLayout>

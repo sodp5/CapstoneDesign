@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employee.EmployeeNoticeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relTitleNotice"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorNotice">
+
+        <ImageButton
+            android:id="@+id/ibtnEmployeeNoticeGoBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_go_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ibtnEmployeeNoticeGoBack"
+            android:layout_marginStart="40dp"
+            android:text="알림"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relTitleNotice"
+        android:background="@drawable/border_leftandright">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
+
+            <RelativeLayout
+                android:id="@+id/relNotice"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_notice_corperation">
+
+                <TextView
+                    android:id="@+id/tvCorperationName"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:hint="기업1"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorTextBlack"
+                    android:paddingStart="15dp"
+                    android:paddingTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/tvCorperationNotice"
+                    android:layout_width="350dp"
+                    android:layout_height="110dp"
+                    android:hint="공지내용"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/colorTextBlack"
+                    android:paddingStart="15dp"
+                    android:paddingTop="15dp"
+                    android:layout_below="@+id/tvCorperationName"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_notice_change_reason"
+                android:layout_below="@+id/relNotice">
+
+                <TextView
+                    android:id="@+id/tvChangeRequestReason"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:hint="변경요청 사유"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorTextBlack"
+                    android:paddingStart="15dp"
+                    android:paddingTop="15dp"/>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/colorTextBlack"
+                    android:paddingStart="15dp"
+                    android:paddingTop="15dp"
+                    android:layout_below="@+id/tvChangeRequestReason"/>
+
+                <Button
+                    android:id="@+id/btnApproval"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="승인"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toStartOf="@+id/btnRefusal"
+                    android:layout_alignParentBottom="true"/>
+
+                <Button
+                    android:id="@+id/btnRefusal"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="거절"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

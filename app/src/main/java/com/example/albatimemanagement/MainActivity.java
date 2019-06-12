@@ -9,10 +9,12 @@ import android.widget.Toast;
 import com.example.albatimemanagement.baseactivity.BaseActivity;
 import com.example.albatimemanagement.employee.EmployeeAccountActivity;
 import com.example.albatimemanagement.employee.EmployeeCalenderActivity;
+import com.example.albatimemanagement.employee.EmployeeNoticeActivity;
 import com.example.albatimemanagement.employee.EmployeePayCheckActivity;
 import com.example.albatimemanagement.employee.EmployeeSettingActivity;
 import com.example.albatimemanagement.inheritance.InheritanceAccountActivity;
 import com.example.albatimemanagement.inheritance.InheritanceCalenderActivity;
+import com.example.albatimemanagement.inheritance.InheritanceNoticeActivity;
 import com.example.albatimemanagement.inheritance.InheritancePayCheckSelectActivity;
 import com.example.albatimemanagement.inheritance.InheritanceSettingActivity;
 
@@ -25,6 +27,8 @@ public class MainActivity extends BaseActivity {
 
     private Intent intentAccount, intentCalender, intentPaycheck, intentNotice, intentSetting;
     private View goToAccount, goToCalender, goToPaycheck, goToNotice, goToSetting;
+
+    private int pressCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +73,7 @@ public class MainActivity extends BaseActivity {
         intentCalender = new Intent(getApplicationContext(), EmployeeCalenderActivity.class);
         intentAccount = new Intent(getApplicationContext(), EmployeeAccountActivity.class);
         intentSetting = new Intent(getApplicationContext(), EmployeeSettingActivity.class);
+        intentNotice = new Intent(getApplicationContext(), EmployeeNoticeActivity.class);
     }
 
 
@@ -77,6 +82,7 @@ public class MainActivity extends BaseActivity {
         intentCalender = new Intent(getApplicationContext(), InheritanceCalenderActivity.class);
         intentAccount = new Intent(getApplicationContext(), InheritanceAccountActivity.class);
         intentSetting = new Intent(getApplicationContext(), InheritanceSettingActivity.class);
+        intentNotice = new Intent(getApplicationContext(), InheritanceNoticeActivity.class);
     }
 
     private View.OnClickListener clickListener = new View.OnClickListener() {

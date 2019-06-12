@@ -1,5 +1,6 @@
 package com.example.albatimemanagement.employee;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -13,7 +14,8 @@ public class EmployeeAccountActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_acount);
 
-        findViewById(R.id.ibtnEmployeeAccountGoBack).setOnClickListener(r -> finish());
+        findViewById(R.id.ibtnEmployeeAccountGoBack).setOnClickListener(v -> finish());
+        findViewById(R.id.btnAccountSearchCompany).setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), EmployeeAccountFindCompanyActivity.class)));
     }
 
     @Override
