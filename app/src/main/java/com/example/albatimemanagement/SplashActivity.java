@@ -5,12 +5,13 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.albatimemanagement.baseactivity.BaseActivity;
 import com.example.albatimemanagement.inheritance.companylist.CompanyInfo;
 import com.example.albatimemanagement.inheritance.companylist.InheritanceListDataManager;
 
 import java.util.ArrayList;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +37,8 @@ public class SplashActivity extends AppCompatActivity {
         InheritanceListDataManager dm = InheritanceListDataManager.getInstance();
 
         ArrayList<CompanyInfo> companyList = dm.getCompanyList();
+
+        companyList.clear();
 
         CompanyInfo companyInfo = new CompanyInfo("(주)PJW");
         companyInfo.addEmp("경문1");

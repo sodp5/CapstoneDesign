@@ -9,12 +9,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.albatimemanagement.R;
+import com.example.albatimemanagement.baseactivity.BaseActivity;
 import com.example.albatimemanagement.inheritance.companylist.CompanyInfo;
 import com.example.albatimemanagement.inheritance.companylist.InheritanceListDataManager;
 
 import java.util.ArrayList;
 
-public class InheritancePayCheckSelectActivity extends AppCompatActivity {
+public class InheritancePayCheckSelectActivity extends BaseActivity {
     private ListView lvInheritancePayCheck;
     private ArrayAdapter<String> inheritanceListAdapter;
     private ArrayList<CompanyInfo> companyList;

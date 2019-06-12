@@ -3,7 +3,9 @@ package com.example.albatimemanagement;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class JoinInActivity extends AppCompatActivity {
+import com.example.albatimemanagement.baseactivity.BaseActivity;
+
+public class JoinInActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.albatimemanagement.baseactivity.BaseActivity;
 import com.example.albatimemanagement.employee.EmployeeAccountActivity;
 import com.example.albatimemanagement.employee.EmployeeCalenderActivity;
 import com.example.albatimemanagement.employee.EmployeePayCheckActivity;
@@ -15,7 +16,7 @@ import com.example.albatimemanagement.inheritance.InheritanceCalenderActivity;
 import com.example.albatimemanagement.inheritance.InheritancePayCheckSelectActivity;
 import com.example.albatimemanagement.inheritance.InheritanceSettingActivity;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends BaseActivity {
     public static final String CLASSIFICATION = "classification";
     public static final String INHERITANCE = "inheritance";
     public static final String EMPLOYEE = "employee";

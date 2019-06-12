@@ -81,7 +81,7 @@
 
     <FrameLayout
         android:id="@+id/spinnerWrapper1"
-        android:layout_width="140dp"
+        android:layout_width="145dp"
         android:layout_height="40dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="18dp"
@@ -96,14 +96,14 @@
             android:id="@+id/spnSiDo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingStart="5dp"
             android:background="@null"/>
 
     </FrameLayout>
 
-
     <FrameLayout
         android:id="@+id/spinnerWrapper2"
-        android:layout_width="125dp"
+        android:layout_width="135dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="18dp"
@@ -119,8 +119,7 @@
             android:id="@+id/spnSiGunGu"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/tvCompanyAddress"
-            android:layout_toEndOf="@+id/spinnerWrapper2"
+            android:paddingStart="5dp"
             android:background="@null"/>
 
     </FrameLayout>

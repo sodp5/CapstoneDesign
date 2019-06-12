@@ -134,7 +134,6 @@
                 android:layout_height="wrap_content"
                 android:text="기업이름"
                 android:textSize="18sp"
-                android:background="drawable/border_"
                 android:paddingStart="20dp"
                 android:paddingTop="10dp"/>
 

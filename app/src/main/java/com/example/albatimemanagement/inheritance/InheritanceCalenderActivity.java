@@ -4,8 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.albatimemanagement.R;
+import com.example.albatimemanagement.baseactivity.BaseActivity;
 
-public class InheritanceCalenderActivity extends AppCompatActivity {
+public class InheritanceCalenderActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

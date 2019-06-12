@@ -6,8 +6,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.albatimemanagement.R;
+import com.example.albatimemanagement.baseactivity.BaseActivity;
 
-public class EmployeeSettingActivity extends AppCompatActivity implements View.OnClickListener {
+public class EmployeeSettingActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

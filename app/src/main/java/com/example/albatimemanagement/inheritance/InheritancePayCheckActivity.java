@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.example.albatimemanagement.R;
+import com.example.albatimemanagement.baseactivity.BaseActivity;
 import com.example.albatimemanagement.inheritance.paychecklist.InheritancePayCheckArrayAdapter;
 import com.example.albatimemanagement.inheritance.paychecklist.InheritancePayCheckItem;
 
 import java.util.ArrayList;
 
-public class InheritancePayCheckActivity extends AppCompatActivity {
+public class InheritancePayCheckActivity extends BaseActivity {
     private InheritancePayCheckArrayAdapter adapter;
     private ArrayList<InheritancePayCheckItem> list;
     private ListView lvPayList;

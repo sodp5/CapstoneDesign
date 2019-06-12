@@ -12,6 +12,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.albatimemanagement.R;
+import com.example.albatimemanagement.baseactivity.BaseActivity;
 import com.example.albatimemanagement.inheritance.companylist.CompanyInfo;
 import com.example.albatimemanagement.inheritance.companylist.InheritanceListDataManager;
 import com.example.albatimemanagement.roadnameinfo.LoadRegionName;
@@ -22,7 +23,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-public class InheritanceAddCompanyActivity extends AppCompatActivity {
+public class InheritanceAddCompanyActivity extends BaseActivity {
     private EditText edtAddCompanyName;
     private EditText edtAddCompanyTelNumber;
     private EditText edtAddCompanyDetailAddress;

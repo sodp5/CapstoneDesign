@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.albatimemanagement.R;
+import com.example.albatimemanagement.baseactivity.BaseActivity;
 
-public class InheritanceAccountActivity extends AppCompatActivity {
+public class InheritanceAccountActivity extends BaseActivity {
     private Button btnAddCompany;
 
     @Override

@@ -10,7 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class LoginActivity extends AppCompatActivity {
+import com.example.albatimemanagement.baseactivity.BaseActivity;
+
+public class LoginActivity extends BaseActivity {
     private EditText edtLoginUserName;
     private EditText edtLoginPassword;
 

@@ -8,12 +8,13 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.example.albatimemanagement.R;
+import com.example.albatimemanagement.baseactivity.BaseActivity;
 import com.example.albatimemanagement.employee.paychecklist.EmployeePayCheckArrayAdapter;
 import com.example.albatimemanagement.employee.paychecklist.EmployeePayCheckItem;
 
 import java.util.ArrayList;
 
-public class EmployeePayCheckActivity extends AppCompatActivity {
+public class EmployeePayCheckActivity extends BaseActivity {
     private EmployeePayCheckArrayAdapter adapter;
     private ListView lvEmployeePayList;
     private ArrayList<EmployeePayCheckItem> list;
