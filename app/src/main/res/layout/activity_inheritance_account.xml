@@ -12,7 +12,7 @@
         android:background="@color/colorAccount">
 
         <ImageButton
-            android:id="@+id/btnAccountGoBack"
+            android:id="@+id/btnInheritanceAddCompanyGoBack"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:background="@drawable/btn_go_back"
@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/btnAccountGoBack"
+            android:layout_toEndOf="@id/btnInheritanceAddCompanyGoBack"
             android:layout_marginStart="40dp"
             android:text="계정"
             android:layout_centerVertical="true"
@@ -203,14 +203,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#79C5C5C5"
-            android:layout_above="@+id/btn34"
+            android:layout_above="@+id/btnAddCompany"
             android:layout_below="@+id/tvMyCoperation"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"></LinearLayout>
 
         <Button
-            android:id="@+id/btn34"
+            android:id="@+id/btnAddCompany"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"

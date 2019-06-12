@@ -13,6 +13,10 @@ public class InheritanceListDataManager {
         return companyList;
     }
 
+    public void addCompany(CompanyInfo c) {
+        companyList.add(c);
+    }
+
     private static class Singleton {
         private final static InheritanceListDataManager instance = new InheritanceListDataManager();
     }

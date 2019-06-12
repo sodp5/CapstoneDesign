@@ -12,7 +12,7 @@
         android:background="@color/colorAccount">
 
         <ImageButton
-            android:id="@+id/btnAccountGoBack"
+            android:id="@+id/btnInheritanceAddCompanyGoBack"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:background="@drawable/btn_go_back"
@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/btnAccountGoBack"
+            android:layout_toEndOf="@id/btnInheritanceAddCompanyGoBack"
             android:layout_marginStart="40dp"
             android:text="기업 추가"
             android:layout_centerVertical="true"
@@ -38,13 +38,13 @@
         android:layout_height="wrap_content"
         android:text="정보"
         android:textColor="#191919"
-        android:textSize="23sp"
+        android:textSize="20sp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="20dp"
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/edtCompanyName"
+        android:id="@+id/edtAddCompanyName"
         android:background="@drawable/border_all"
         android:layout_below="@+id/tvCompanyInfo"
         android:layout_width="match_parent"
@@ -52,39 +52,39 @@
         android:layout_marginStart="35dp"
         android:layout_marginEnd="35dp"
         android:hint="기업 이름"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         android:paddingStart="15dp"/>
 
     <EditText
-        android:id="@+id/edtCompanyTelephoneNumber"
+        android:id="@+id/edtAddCompanyTelNumber"
         android:background="@drawable/border_all"
-        android:layout_below="@+id/edtCompanyName"
+        android:layout_below="@+id/edtAddCompanyName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="35dp"
         android:hint="전화 번호(대표)"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:paddingStart="15dp"/>
 
     <TextView
         android:id="@+id/tvCompanyAddress"
-        android:layout_below="@+id/edtCompanyTelephoneNumber"
+        android:layout_below="@+id/edtAddCompanyTelNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="주소"
         android:textColor="#191919"
-        android:textSize="23sp"
+        android:textSize="20sp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="20dp"
         android:textStyle="bold"/>
 
     <FrameLayout
         android:id="@+id/spinnerWrapper1"
-        android:layout_width="100dp"
+        android:layout_width="140dp"
         android:layout_height="40dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         android:layout_below="@id/tvCompanyAddress">
 
         <ImageView
@@ -93,20 +93,20 @@
             android:src="@drawable/bg_spinner_big"
             android:scaleType="fitXY"/>
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spnSiDo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@null" />
+            android:background="@null"/>
 
     </FrameLayout>
 
 
     <FrameLayout
         android:id="@+id/spinnerWrapper2"
-        android:layout_width="100dp"
+        android:layout_width="125dp"
         android:layout_height="40dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
         android:layout_below="@id/tvCompanyAddress"
         android:layout_toEndOf="@+id/spinnerWrapper1">
 
@@ -116,18 +116,17 @@
             android:src="@drawable/bg_spinner_big"
             android:scaleType="fitXY"/>
         <Spinner
-            android:id="@+id/spinner2"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/spnSiGunGu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@+id/tvCompanyAddress"
-            android:layout_toEndOf="@+id/spinnerWrapper2"/>
+            android:layout_toEndOf="@+id/spinnerWrapper2"
+            android:background="@null"/>
 
     </FrameLayout>
 
     <EditText
-        android:id="@+id/edtCompanyAddress"
+        android:id="@+id/edtAddCompanyDetailAddress"
         android:background="@drawable/border_all"
         android:layout_below="@+id/spinnerWrapper1"
         android:layout_width="match_parent"
@@ -135,32 +134,32 @@
         android:layout_marginStart="35dp"
         android:layout_marginEnd="35dp"
         android:hint="상세 주소"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:paddingStart="15dp"/>
 
     <TextView
         android:id="@+id/tvCompanyNumber"
-        android:layout_below="@+id/edtCompanyAddress"
+        android:layout_below="@+id/edtAddCompanyDetailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="사업자 번호"
         android:textColor="#191919"
-        android:textSize="23sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:layout_marginStart="35dp"/>
 
     <EditText
-        android:id="@+id/edtCompanyNumber"
+        android:id="@+id/edtAddCompanyNumber"
         android:background="@drawable/border_all"
-        android:layout_below="@+id/edtCompanyAddress"
+        android:layout_below="@+id/edtAddCompanyDetailAddress"
         android:layout_toEndOf="@+id/tvCompanyNumber"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="35dp"
         android:hint="번호"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         android:paddingStart="15dp"/>
 
     <TextView
@@ -171,19 +170,19 @@
         android:layout_alignEnd="@+id/tvCompanyNumber"
         android:text="월급 일자"
         android:textColor="#191919"
-        android:textSize="23sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="38dp"
         android:layout_marginStart="35dp"/>
 
     <FrameLayout
         android:id="@+id/spinnerWrapper3"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="40dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/edtCompanyNumber"
-        android:layout_toEndOf="@+id/spinnerWrapper1">
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/edtAddCompanyNumber"
+        android:layout_toEndOf="@+id/tvDate">
 
         <ImageView
             android:layout_width="match_parent"
@@ -192,24 +191,29 @@
             android:scaleType="fitXY"/>
 
         <Spinner
-            android:id="@+id/spinner3"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:layout_below="@+id/tvCompanyAddress"
-            android:layout_toEndOf="@+id/spinnerWrapper2"/>
+            android:id="@+id/spnCompanySalaryDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null" />
 
     </FrameLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spinnerWrapper3"
+        android:layout_above="@+id/btnInheritanceAddCompanyComplete">
+
+    </LinearLayout>
+
     <Button
+        android:id="@+id/btnInheritanceAddCompanyComplete"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:background="@drawable/btn_color_account"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="30dp"
         android:textColor="#555555"
         android:textSize="20sp"
         android:textStyle="bold"
