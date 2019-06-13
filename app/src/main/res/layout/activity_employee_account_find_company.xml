@@ -39,7 +39,7 @@
         <RelativeLayout
             android:id="@+id/relFindCompany"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:background="@drawable/bg_spinner_empty_small"
             android:layout_marginTop="20dp"
             android:layout_marginStart="40dp"
@@ -47,20 +47,19 @@
 
             <ImageView
                 android:id="@+id/ivCompanySearch"
-                android:layout_width="70dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
                 android:padding="10dp"
                 android:background="#C7C7C7"
                 android:src="@drawable/btn_search"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:hint="검색어"
-                android:textColorHint="@color/colorTextBlack"
                 android:textSize="18sp"
                 android:gravity="center_vertical"
-                android:paddingStart="10dp"
+                android:paddingStart="16dp"
                 android:background="@null"
                 android:layout_toEndOf="@+id/ivCompanySearch" />
         </RelativeLayout>
@@ -78,7 +77,7 @@
                 android:id="@+id/spinnerWrapperCityState"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="20dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -88,7 +87,6 @@
 
                 <Spinner
                     android:id="@+id/spinnerCityState"
-                    android:layout_marginTop="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@null"/>
@@ -99,7 +97,7 @@
                 android:id="@+id/spinnerWrapperCityDistrictBorough"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginStart="40dp">
 
                 <ImageView
@@ -110,7 +108,6 @@
 
                 <Spinner
                     android:id="@+id/spinnerCityDistrictBorough"
-                    android:layout_marginTop="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@null"/>
@@ -120,6 +117,8 @@
         </LinearLayout>
 
         <RelativeLayout
+            android:id="@+id/relCompanyInfo"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_below="@+id/linearSpinner"
@@ -132,7 +131,7 @@
                 android:id="@+id/tvFindCompanyName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="기업이름"
+                android:text="(주)ATM"
                 android:textSize="18sp"
                 android:paddingStart="20dp"
                 android:paddingTop="10dp"/>
@@ -141,7 +140,7 @@
                 android:id="@+id/tvFindCompanyTel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="전화번호"
+                android:text="031-496-1234"
                 android:textSize="18sp"
                 android:paddingStart="20dp"
                 android:paddingTop="5dp"
@@ -151,7 +150,7 @@
                 android:id="@+id/tvFindCompanyAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="주소"
+                android:text="경기도 시흥시 정왕동 P동"
                 android:textSize="18sp"
                 android:paddingStart="20dp"
                 android:paddingTop="5dp"
@@ -168,8 +167,8 @@
         </RelativeLayout>
 
         <Button
-            android:id="@+id/btnCalendarComplete"
-            android:layout_width="125dp"
+            android:id="@+id/btnEmployeeFindCompanyComplete"
+            android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
             android:layout_alignParentBottom="true"
@@ -177,7 +176,7 @@
             android:layout_marginEnd="20dp"
             android:background="@drawable/btn_color_account"
             android:textStyle="bold"
-            android:textColor="@color/colorTextBlack"
+            android:textColor="@color/colorTextWhite"
             android:textSize="20sp"
             android:text="완료"/>
 

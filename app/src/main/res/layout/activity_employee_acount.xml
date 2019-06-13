@@ -220,7 +220,7 @@
             android:layout_centerInParent="true"
             android:background="@drawable/btn_color_account"
             android:layout_marginBottom="20dp"
-            android:textColor="#ffffff"
+            android:textColor="@color/colorTextWhite"
             android:textSize="20sp"
             android:textStyle="bold"
             android:text="기업 검색"/>
