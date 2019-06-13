@@ -1,5 +1,7 @@
 package com.example.albatimemanagement.inheritance.paychecklist;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
@@ -14,6 +16,8 @@ import com.example.albatimemanagement.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.content.Context.CLIPBOARD_SERVICE;
 
 public class InheritancePayCheckArrayAdapter extends ArrayAdapter<InheritancePayCheckItem> {
     private Context context;
@@ -85,7 +89,10 @@ public class InheritancePayCheckArrayAdapter extends ArrayAdapter<InheritancePay
         viewHolder.btnItemInheritancePayCopy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "계좌가 복사 되었습니다.", Toast.LENGTH_SHORT).show();
+                ClipboardManager clipboardManager = (ClipboardManager) context.getSystemService(CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("label", "신한 110438123039 100200원");
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(context, "복사되었습니다.",Toast.LENGTH_LONG).show();
             }
         });
 

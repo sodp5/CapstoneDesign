@@ -132,7 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="(주)ATM"
-                android:textSize="18sp"
+                android:textSize="17sp"
                 android:paddingStart="20dp"
                 android:paddingTop="10dp"/>
 
@@ -141,7 +141,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="031-496-1234"
-                android:textSize="18sp"
+                android:textSize="17sp"
                 android:paddingStart="20dp"
                 android:paddingTop="5dp"
                 android:layout_below="@+id/tvFindCompanyName"/>
@@ -151,7 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="경기도 시흥시 정왕동 P동"
-                android:textSize="18sp"
+                android:textSize="17sp"
                 android:paddingStart="20dp"
                 android:paddingTop="5dp"
                 android:layout_below="@+id/tvFindCompanyTel"/>

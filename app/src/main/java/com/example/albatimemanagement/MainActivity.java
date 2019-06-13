@@ -105,7 +105,7 @@ public class MainActivity extends BaseActivity {
         intentCalender = new Intent(getApplicationContext(), InheritanceCalenderActivity.class);
         intentAccount = new Intent(getApplicationContext(), InheritanceAccountActivity.class);
         intentSetting = new Intent(getApplicationContext(), InheritanceSettingActivity.class);
-        intentNotice = new Intent(getApplicationContext(), InheritanceNoticeActivity.class);
+//        intentNotice = new Intent(getApplicationContext(), InheritanceNoticeActivity.class);
     }
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
