@@ -2,12 +2,11 @@ package com.example.albatimemanagement;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.albatimemanagement.baseactivity.BaseActivity;
-import com.example.albatimemanagement.inheritance.companylist.CompanyInfo;
-import com.example.albatimemanagement.inheritance.companylist.InheritanceListDataManager;
+import com.example.albatimemanagement.inheritance.companydata.CompanyInfo;
+import com.example.albatimemanagement.inheritance.companydata.InheritanceListDataManager;
 
 import java.util.ArrayList;
 
@@ -40,18 +39,18 @@ public class SplashActivity extends BaseActivity {
 
         companyList.clear();
 
-        CompanyInfo companyInfo = new CompanyInfo("(주)PJW");
-        companyInfo.addEmp("경문1");
-        companyInfo.addEmp("경문2");
-        CompanyInfo companyInfo2 = new CompanyInfo("(주)JSD");
-        companyInfo2.addEmp("태기1");
-        companyInfo2.addEmp("태기2");
-        CompanyInfo companyInfo3 = new CompanyInfo("(주)KWS");
-        companyInfo3.addEmp("이헌1");
-        companyInfo3.addEmp("이헌2");
-        CompanyInfo companyInfo4 = new CompanyInfo("(주)KJS");
-        companyInfo4.addEmp("다연1");
-        companyInfo4.addEmp("다연2");
+        CompanyInfo companyInfo = new CompanyInfo("(주)PJW", "박지웅", "1일", "경기도 시흥시 정왕동 C326");
+        companyInfo.addEmp("안경문");
+        companyInfo.addEmp("김경문");
+        CompanyInfo companyInfo2 = new CompanyInfo("(주)JSD", "전선도", "10일", "경기도 시흥시 정왕동 C320");
+        companyInfo2.addEmp("김태기");
+        companyInfo2.addEmp("이태기");
+        CompanyInfo companyInfo3 = new CompanyInfo("(주)KWS", "김응성", "15일", "경기도 시흥시 정왕동 C324");
+        companyInfo3.addEmp("이  헌");
+        companyInfo3.addEmp("박  헌");
+        CompanyInfo companyInfo4 = new CompanyInfo("(주)KJS", "김정식", "10일", "경기도 시흥시 정왕동 C116");
+        companyInfo4.addEmp("남다연");
+        companyInfo4.addEmp("최다연");
 
         companyList.add(companyInfo);
         companyList.add(companyInfo2);

@@ -1,4 +1,4 @@
-package com.example.albatimemanagement.inheritance.companylist;
+package com.example.albatimemanagement.inheritance.companydata;
 
 import java.util.ArrayList;
 

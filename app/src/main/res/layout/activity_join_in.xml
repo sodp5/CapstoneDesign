@@ -11,7 +11,7 @@
         android:id="@+id/relTitleSetting"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/colorStatusJoinIn">
+        android:background="#273238">
 
         <ImageButton
             android:id="@+id/ibtnJoinInGoBack"

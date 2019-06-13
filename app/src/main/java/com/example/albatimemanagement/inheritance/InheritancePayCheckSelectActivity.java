@@ -1,7 +1,6 @@
 package com.example.albatimemanagement.inheritance;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,8 +9,8 @@ import android.widget.ListView;
 
 import com.example.albatimemanagement.R;
 import com.example.albatimemanagement.baseactivity.BaseActivity;
-import com.example.albatimemanagement.inheritance.companylist.CompanyInfo;
-import com.example.albatimemanagement.inheritance.companylist.InheritanceListDataManager;
+import com.example.albatimemanagement.inheritance.companydata.CompanyInfo;
+import com.example.albatimemanagement.inheritance.companydata.InheritanceListDataManager;
 
 import java.util.ArrayList;
 

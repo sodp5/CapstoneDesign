@@ -7,6 +7,7 @@
     <color name="colorSplash">#323449</color>
     <color name="colorTextBlack">#191919</color>
     <color name="colorTextWhite">#f0f0f0</color>
+    <color name="colorTextConfirm">#4A6DCA</color>
     <color name="colorBarGray">#a0a0a0</color>
 
     <color name="colorMenu">#a8a8a8</color>

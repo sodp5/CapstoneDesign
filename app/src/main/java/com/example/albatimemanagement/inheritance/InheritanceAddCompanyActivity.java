@@ -1,6 +1,5 @@
 package com.example.albatimemanagement.inheritance;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,8 +12,8 @@ import android.widget.Toast;
 
 import com.example.albatimemanagement.R;
 import com.example.albatimemanagement.baseactivity.BaseActivity;
-import com.example.albatimemanagement.inheritance.companylist.CompanyInfo;
-import com.example.albatimemanagement.inheritance.companylist.InheritanceListDataManager;
+import com.example.albatimemanagement.inheritance.companydata.CompanyInfo;
+import com.example.albatimemanagement.inheritance.companydata.InheritanceListDataManager;
 import com.example.albatimemanagement.roadnameinfo.LoadRegionName;
 import com.example.albatimemanagement.roadnameinfo.Region;
 
@@ -43,7 +42,7 @@ public class InheritanceAddCompanyActivity extends BaseActivity {
     private String lastClickSiDo;
     private String lastClickSiGunGu;
 
-
+    private String salaryDay = "1일";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -160,12 +159,27 @@ public class InheritanceAddCompanyActivity extends BaseActivity {
             String cantCompleteMsg = "";
 
             String companyName = edtAddCompanyName.getText().toString();
+            String presidentName = ((EditText)findViewById(R.id.edtAddCompanyPresidentName)).getText().toString();
             String companyTelNumber = edtAddCompanyTelNumber.getText().toString();
             String companyDetailAddress = edtAddCompanyDetailAddress.getText().toString();
             String companyNumber = edtAddCompanyNumber.getText().toString();
 
+            spnCompanySalaryDay.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                    salaryDay = (String)adapterView.getItemAtPosition(i);
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> adapterView) {
+
+                }
+            });
+
             if (companyName.equals(""))
                 cantCompleteMsg = "기업 이름을 입력 해 주세요.";
+            else if (presidentName.equals(""))
+                cantCompleteMsg = "대표 이름을 입력 해 주세요.1";
             else if (companyTelNumber.equals(""))
                 cantCompleteMsg = "전화번호를 기입 해 주세요.";
             else if (companyDetailAddress.equals(""))
@@ -173,7 +187,8 @@ public class InheritanceAddCompanyActivity extends BaseActivity {
             else if (companyNumber.equals(""))
                 cantCompleteMsg = "사업자 번호를 입력 해 주세요.";
             else {
-                dm.addCompany(new CompanyInfo(companyName));
+                String address = lastClickSiDo + " " + lastClickSiGunGu + " " + companyDetailAddress;
+                dm.addCompany(new CompanyInfo(companyName, presidentName, salaryDay, address));
                 finish();
             }
             Toast.makeText(InheritanceAddCompanyActivity.this, cantCompleteMsg, Toast.LENGTH_SHORT).show();

@@ -56,9 +56,21 @@
         android:paddingStart="15dp"/>
 
     <EditText
-        android:id="@+id/edtAddCompanyTelNumber"
+        android:id="@+id/edtAddCompanyPresidentName"
         android:background="@drawable/border_all"
         android:layout_below="@+id/edtAddCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:hint="대표 이름"
+        android:layout_marginTop="16dp"
+        android:paddingStart="15dp"/>
+
+    <EditText
+        android:id="@+id/edtAddCompanyTelNumber"
+        android:background="@drawable/border_all"
+        android:layout_below="@+id/edtAddCompanyPresidentName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="35dp"

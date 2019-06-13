@@ -137,6 +137,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:text="확인"
+        android:textColor="@color/colorTextConfirm"
         android:background="@null"/>
 
 
