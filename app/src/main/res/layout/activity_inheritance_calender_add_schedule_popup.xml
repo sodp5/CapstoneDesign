@@ -22,10 +22,9 @@
             android:scaleType="fitXY"/>
 
         <Spinner
-            android:id="@+id/spinnerEmployeeName"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/spinnerAddEmployeeName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@null"/>
 
     </FrameLayout>
@@ -45,10 +44,9 @@
             android:scaleType="fitXY"/>
 
         <Spinner
-            android:id="@+id/spinnerDate"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/spinnerAddDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@null"/>
 
     </FrameLayout>
@@ -80,9 +78,8 @@
 
         <Spinner
             android:id="@+id/spinnerHour1"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@null"/>
 
     </FrameLayout>
@@ -116,9 +113,8 @@
 
         <Spinner
             android:id="@+id/spinnerMinute1"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@null"/>
 
     </FrameLayout>
@@ -151,9 +147,8 @@
 
         <Spinner
             android:id="@+id/spinnerHour2"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@null"/>
 
     </FrameLayout>
@@ -186,9 +181,8 @@
 
         <Spinner
             android:id="@+id/spinnerMinute2"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@null"/>
 
     </FrameLayout>
@@ -211,21 +205,30 @@
     <LinearLayout
         android:id="@+id/linearLvInheritanceAddSchedule"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/border_all"
-        android:layout_below="@+id/btnAddTime">
-
-        <ListView
+        android:layout_below="@+id/btnAddTime"
+        android:layout_above="@+id/buttonWrapper">
+        <TextView
+            android:id="@+id/addTimeView"
+            android:visibility="gone"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_height="wrap_content"
+            android:text="월ㅣ 10:00 ~ 12:00"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"/>
+
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/buttonWrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

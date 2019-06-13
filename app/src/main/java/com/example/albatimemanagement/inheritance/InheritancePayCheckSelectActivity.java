@@ -52,6 +52,7 @@ public class InheritancePayCheckSelectActivity extends BaseActivity {
                 for (String s : c.getEmpList()) {
                     intent.putExtra("member" + size++, s);
                 }
+                intent.putExtra("name", c.getName());
                 intent.putExtra("size", size);
                 startActivity(intent);
             }

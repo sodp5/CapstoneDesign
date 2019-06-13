@@ -1,6 +1,7 @@
 package com.example.albatimemanagement;
 
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -127,7 +128,8 @@ public class MainActivity extends BaseActivity {
                     break;
                 case R.id.goToSetting:
                     intent = intentSetting;
-                    break;
+                    startActivityForResult(intent, 0);
+                    return;
             }
             if (intent == null) {
                 Toast.makeText(MainActivity.this, "미구현", Toast.LENGTH_SHORT).show();
@@ -137,5 +139,9 @@ public class MainActivity extends BaseActivity {
         }
     };
 
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if(resultCode == 123)
+            finish();
+    }
 }

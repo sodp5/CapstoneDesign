@@ -29,8 +29,8 @@ public class EmployeePayCheckActivity extends BaseActivity {
         lvEmployeePayList = findViewById(R.id.lvEmployeePayList);
         list = new ArrayList<>();
 
-        list.add(new EmployeePayCheckItem("12시간", "8,350원", "1일", "307,080원"));
-        list.add(new EmployeePayCheckItem("12시간", "8,500원", "5일", "317,080원"));
+        list.add(new EmployeePayCheckItem("10시간", "8,350원", "1일", "307,080원", "(주)PJW"));
+        list.add(new EmployeePayCheckItem("12시간", "8,500원", "10일", "327,240원", "(주)JSD"));
 
         adapter = new EmployeePayCheckArrayAdapter(getApplicationContext(), list);
 

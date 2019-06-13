@@ -463,7 +463,7 @@
                             android:textAlignment="center"
                             android:textColor="@color/colorTextBlack"
                             android:textSize="20sp"
-                            android:text="10:00~12:00/15:00~18:00"/>
+                            android:text="10:00~12:00/18:00~21:00"/>
                     </TableRow>
                     <TableRow>
                         <TextView
@@ -475,7 +475,7 @@
                             android:textAlignment="center"
                             android:textColor="@color/colorTextBlack"
                             android:textSize="20sp"
-                            android:text="이헌"/>
+                            android:text="이  헌"/>
 
                         <TextView
                             android:gravity="center"
@@ -486,7 +486,7 @@
                             android:textAlignment="center"
                             android:textColor="@color/colorTextBlack"
                             android:textSize="20sp"
-                            android:text="10:00~12:00/15:00~18:00"/>
+                            android:text="12:00~15:00"/>
                     </TableRow>
                     <TableRow>
                         <TextView
@@ -509,7 +509,7 @@
                             android:textAlignment="center"
                             android:textColor="@color/colorTextBlack"
                             android:textSize="20sp"
-                            android:text="10:00~12:00/15:00~18:00"/>
+                            android:text="10:00~12:00"/>
                     </TableRow>
                     <TableRow>
 

@@ -22,6 +22,7 @@ public class EmployeePayCheckArrayAdapter extends ArrayAdapter<EmployeePayCheckI
         private TextView tvItemEmployeePoh;
         private TextView tvItemEmployeeSalaryDay;
         private TextView tvItemEmployeeSom;
+        private TextView tvPayCompanyName;
     }
 
 
@@ -57,6 +58,7 @@ public class EmployeePayCheckArrayAdapter extends ArrayAdapter<EmployeePayCheckI
             viewHolder.tvItemEmployeePoh = rowView.findViewById(R.id.tvItemEmployeePoh);
             viewHolder.tvItemEmployeeSalaryDay = rowView.findViewById(R.id.tvItemEmployeeSalaryDay);
             viewHolder.tvItemEmployeeSom = rowView.findViewById(R.id.tvItemEmployeeSom);
+            viewHolder.tvPayCompanyName = rowView.findViewById(R.id.tvPayCompanyName);
 
             rowView.setTag(viewHolder);
         } else {
@@ -78,6 +80,7 @@ public class EmployeePayCheckArrayAdapter extends ArrayAdapter<EmployeePayCheckI
         viewHolder.tvItemEmployeePoh.setText(employeePayCheckItem.getPoh());
         viewHolder.tvItemEmployeeSalaryDay.setText(employeePayCheckItem.getSalaryDay());
         viewHolder.tvItemEmployeeSom.setText(employeePayCheckItem.getSom());
+        viewHolder.tvPayCompanyName.setText(employeePayCheckItem.getCompanyName());
 
         // 화면에 보여질 뷰를 리턴하여 ListView의 특정 줄로 보여지게 합니다.
         //본 예제에서는 5개의 TextView 구성되어 있습니다.

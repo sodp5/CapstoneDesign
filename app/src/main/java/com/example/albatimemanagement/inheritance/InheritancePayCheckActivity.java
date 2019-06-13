@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.albatimemanagement.R;
 import com.example.albatimemanagement.baseactivity.BaseActivity;
+import com.example.albatimemanagement.inheritance.companydata.InheritanceListDataManager;
 import com.example.albatimemanagement.inheritance.paychecklist.InheritancePayCheckArrayAdapter;
 import com.example.albatimemanagement.inheritance.paychecklist.InheritancePayCheckItem;
 
@@ -31,7 +33,7 @@ public class InheritancePayCheckActivity extends BaseActivity {
         for (int i = 0; i < intent.getIntExtra("size", 0); i++) {
             list.add(new InheritancePayCheckItem(intent.getStringExtra("member" + i), "12시", "8,350원", "102,000원"));
         }
-
+        ((TextView)findViewById(R.id.tvCompanyName)).setText(intent.getStringExtra("name"));
         lvPayList.setAdapter(adapter);
     }
 

@@ -5,12 +5,14 @@ public class EmployeePayCheckItem {
     private String poh;
     private String salaryDay;
     private String som;
+    private String companyName;
 
-    public EmployeePayCheckItem(String stackTime, String poh, String salaryDay, String som) {
+    public EmployeePayCheckItem(String stackTime, String poh, String salaryDay, String som, String companyName) {
         this.stackTime = stackTime;
         this.poh = poh;
         this.salaryDay = salaryDay;
         this.som = som;
+        this.companyName = companyName;
     }
 
     public String getStackTime() {
@@ -43,5 +45,9 @@ public class EmployeePayCheckItem {
 
     public void setSom(String som) {
         this.som = som;
+    }
+
+    public String getCompanyName() {
+        return companyName;
     }
 }

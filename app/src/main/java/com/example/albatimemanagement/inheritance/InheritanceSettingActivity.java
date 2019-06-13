@@ -26,6 +26,7 @@ public class InheritanceSettingActivity extends BaseActivity implements View.OnC
         findViewById(R.id.btni5).setOnClickListener(v -> {
             Toast.makeText(this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            setResult(123);
             finish();
         });
     }

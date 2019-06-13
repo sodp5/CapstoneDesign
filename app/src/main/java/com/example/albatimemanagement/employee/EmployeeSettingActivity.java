@@ -25,6 +25,7 @@ public class EmployeeSettingActivity extends BaseActivity implements View.OnClic
         findViewById(R.id.btne4).setOnClickListener(v -> {
             Toast.makeText(this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            setResult(123);
             finish();
         });
     }
