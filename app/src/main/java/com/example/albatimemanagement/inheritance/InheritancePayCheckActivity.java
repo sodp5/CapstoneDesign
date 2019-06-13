@@ -31,10 +31,6 @@ public class InheritancePayCheckActivity extends BaseActivity {
         for (int i = 0; i < intent.getIntExtra("size", 0); i++) {
             list.add(new InheritancePayCheckItem(intent.getStringExtra("member" + i), "12시", "8,350원", "102,000원"));
         }
-//        list.add(new InheritancePayCheckItem("안경문", "12시", "8,350원", "102,000원"));
-//        list.add(new InheritancePayCheckItem("김태기", "12시", "8,350원", "102,000원"));
-//        list.add(new InheritancePayCheckItem("이 헌", "12시", "8,350원", "102,000원"));
-//        list.add(new InheritancePayCheckItem("남다연", "12시", "8,350원", "102,000원"));
 
         lvPayList.setAdapter(adapter);
     }
