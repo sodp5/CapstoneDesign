@@ -6,7 +6,7 @@
     android:layout_height="550dp"
     android:background="@drawable/border_all"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".employee.ScheduleChangePopUpActivity">
+    tools:context=".employee.EmployeeScheduleChangePopUpActivity">
 
     <TextView
         android:id="@+id/tvChange1"

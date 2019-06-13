@@ -23,7 +23,7 @@
         <activity android:name=".inheritance.InheritanceAddCompanyActivity" />
         <activity android:name=".inheritance.InheritanceCalenderActivity" />
         <activity android:name=".employee.EmployeeCalenderActivity" />
-        <activity android:name=".employee.ScheduleChangePopUpActivity"
+        <activity android:name=".employee.EmployeeScheduleChangePopUpActivity"
             android:theme="@style/Theme.AppCompat.DayNight.Dialog"
             android:screenOrientation="portrait"/>
         <activity android:name=".inheritance.InheritanceAccountActivity" />
