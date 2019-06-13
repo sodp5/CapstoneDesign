@@ -381,7 +381,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/relDayOfWeek"
-            android:layout_above="@+id/btnCalendarComplete"
+            android:layout_above="@+id/btnCalendarRequestChange"
             android:layout_marginBottom="20dp">
             <RelativeLayout
                 android:id="@+id/relTableEmployee"

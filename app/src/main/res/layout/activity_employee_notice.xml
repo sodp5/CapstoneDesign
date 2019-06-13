@@ -56,28 +56,28 @@
                     android:id="@+id/tvCorperationName"
                     android:layout_width="350dp"
                     android:layout_height="40dp"
-                    android:hint="기업1"
-                    android:textSize="20sp"
-                    android:textColorHint="@color/colorTextBlack"
-                    android:paddingStart="15dp"
-                    android:paddingTop="15dp"/>
+                    android:text="(주)PJW"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorTextBlack"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"/>
 
                 <TextView
                     android:id="@+id/tvCorperationNotice"
                     android:layout_width="350dp"
                     android:layout_height="110dp"
-                    android:hint="공지내용"
+                    android:text="시험공부 열심히 하자!"
                     android:textSize="16sp"
-                    android:textColorHint="@color/colorTextBlack"
-                    android:paddingStart="15dp"
-                    android:paddingTop="15dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:paddingStart="24dp"
+                    android:paddingTop="13dp"
                     android:layout_below="@+id/tvCorperationName"/>
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="170dp"
                 android:background="@drawable/bg_notice_change_reason"
                 android:layout_below="@+id/relNotice">
 
@@ -85,19 +85,20 @@
                     android:id="@+id/tvChangeRequestReason"
                     android:layout_width="350dp"
                     android:layout_height="40dp"
-                    android:hint="변경요청 사유"
-                    android:textSize="20sp"
-                    android:textColorHint="@color/colorTextBlack"
-                    android:paddingStart="15dp"
-                    android:paddingTop="15dp"/>
+                    android:text="변경요청 사유"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorTextBlack"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"/>
 
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="50dp"
+                    android:text="저 그 날 친구 생일이라서 그러는데\n혹시 알바 타임 바꿔 주실 수 있나요?."
                     android:textSize="16sp"
-                    android:textColorHint="@color/colorTextBlack"
-                    android:paddingStart="15dp"
-                    android:paddingTop="15dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:paddingStart="24dp"
+                    android:paddingTop="13dp"
                     android:layout_below="@+id/tvChangeRequestReason"/>
 
                 <Button
@@ -105,6 +106,7 @@
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:text="승인"
+                    android:textColor="@color/colorTextConfirm"
                     android:background="@null"
                     android:layout_marginBottom="20dp"
                     android:layout_marginEnd="5dp"
